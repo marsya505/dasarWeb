@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff); /* warna gradien */
+    line-height: 1.65;
+    padding-bottom: 1000px;
+    margin: 0; }
+.container-satu {
+    width: 900px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+.kolom-utama {
+    flex: 2;
+    margin: 0 20px;
+    text-align: center; }
+.kolom-utama .img-artikel {
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px 0; }
+.sidebar-satu, .sidebar-dua {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;}
+.sidebar-satu .img-sidebar {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px; }
+.sidebar-dua {
+    background-color: #ffe6e6; }
+    
