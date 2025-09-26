@@ -19,12 +19,8 @@ $menu = [
 
 function tampilkanMenuBeritingkat(array $menu) {
     echo "<ul>";
-    foreach ($menu as $item) {
-        echo "<li>{$item['nama']}";
-        if (isset($item['subMenu'])) {
-            tampilkanMenuBeritingkat($item['subMenu']);
-        }
-        echo "</li>";
+    foreach ($menu as $key => $item) {
+        echo "<li>{$item['nama']}</li>";
     }
     echo "</ul>";
 }
