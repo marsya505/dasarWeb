@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Marsya Tech</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Job Application <strong>Marsya Tech</strong></h2>
+    <form id="jobForm" action="upload.php" method="POST" enctype="multipart/form-data">
+      <label>Full Name</label>
+      <input type="text" name="fullname" id="fullname" required>
+
+      <label>Email</label>
+      <input type="email" name="email" id="email" required>
+
+      <label>Phone Number</label>
+      <input type="tel" name="phone" id="phone" required>
+
+      <label>Position Applying For</label>
+      <select name="position" id="position" required>
+        <option value="">-- Select --</option>
+        <option>Web Developer</option>
+        <option>Graphic Designer</option>
+        <option>Marketing Specialist</option>
+      </select>
+
+      <label>Years of Experience</label>
+      <input type="number" name="experience" id="experience" min="0" required>
+
+      <label>Upload Resume (PDF/DOCX)</label>
+      <input type="file" name="resume" id="resume" accept=".pdf,.docx,.doc" required>
+
+      <label>Cover Letter</label>
+      <textarea name="coverletter" id="coverletter" placeholder="Write a short introduction..."></textarea>
+
+      <button type="submit" class="btn">Submit Application</button>
+    </form>
+
+    <div class="success-message" id="successMessage">Form validated successfully!</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
